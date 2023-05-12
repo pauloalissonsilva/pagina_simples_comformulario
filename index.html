@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="cacto.svg" type="image/x-icon" />
+    <title>São João</title>
+  </head>
+  <body>
+    <div class="caixa">
+      <img src="forro.png" alt="nordeste" />
+      <h1>O que você encontra aqui</h1>
+
+      <p>
+        O São João no Nordeste é uma festa que encanta a todos, com suas músicas
+        animadas e com a animação dos seus participantes. É uma celebração da
+        cultura e das tradições da região, com uma programação variada que
+        inclui apresentações de quadrilhas, shows de artistas locais e comidas
+        típicas deliciosas. "Forró, fogueira e comida típica, o que mais a gente
+        precisa pra ser feliz?", como diz outra frase nordestina. É um tempo de
+        confraternização e de celebração da vida, que faz a alegria de todos que
+        participam dessa festa tão especial.
+      </p>
+      <p>
+        Diretamente do terreiro da fazenda o melhor são João de todos os tempos,
+        e você não vai ficar de fora né? É como já dizia a canção: como é bonito
+        são João na roça, é uma palhoça no terreiro de vovô tem buscapé, tem
+        track de sala e todo mundo fala são João chegou...
+        <div id="iniciarContato"><button onclick="abrir()">ENTRAR EM CONTATO</button></div>
+      </p>
+    </div>
+    <form action="https://formsubmit.co/alyssonbbmp@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Digite seu nome" />
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Seu melhor email"
+      />
+      <textarea
+        type="text"
+        name="Duvida"
+        placeholder="Sua Duvida Aqui"
+      ></textarea>
+      <button type="submit">ENVIAR</button>
+      <button onclick="fechar()" type="button" class="voltar">VOLTAR</button>
+    </form>
+    <script>
+      function abrir() {
+        document.querySelector("form").style.opacity = 1;
+        document.querySelector("div").style.opacity = 0.3;
+      }
+
+      function fechar() {
+        document.querySelector("form").style.opacity = 0;
+        document.querySelector("div").style.opacity = 1;
+      }
+    </script>
+  </body>
+</html>
